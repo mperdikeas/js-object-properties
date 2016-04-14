@@ -38,6 +38,8 @@ based on the following predicates:
   // of the prototype chain (the Object.prototype)
   properties(o, '!enumerable && (height===0)', x=>x.prop)
 
+
+
 ## Tests
 
     // not yet implemented
