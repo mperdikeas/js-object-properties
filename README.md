@@ -20,6 +20,7 @@ based on the following predicates:
 
 ## Usage
 
+```javascript
   import {properties} from 'obj-properties';
 
   // return an array of only non-symbol own properties of object o
