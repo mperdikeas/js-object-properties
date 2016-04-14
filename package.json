@@ -1,6 +1,6 @@
 {
   "name": "obj-properties",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Dynamically evaluated iterator of object properties",
   "main": "lib/index.js",
   "scripts": {
