@@ -5,14 +5,14 @@ A small library allowing a user to specify which properties of an
 object she's interested to retrieve by using arbitrary boolean expressions
 based on the following predicates:
 
-* **own** (whether the property lives on the object or up the prototype chain)
-* **symbol** (whether the property is a symbol or not)
-* **enum** (whether the property is enumerable or not)
-* **depth** (the "depth" of the object on which the property is located along the prototype chain
+* **own**: whether the property lives on the object or up the prototype chain
+* **symbol**: whether the property is a symbol or not
+* **enum**: whether the property is enumerable or not
+* **depth**: the "depth" of the object on which the property is located along the prototype chain.
         0 corresponds to the object itself, 1 to its prototype, 2 to the prototype's prototype
-         and so on)
-* **height** (the "height" of the object on which the property is located along the prototype chain
-     - 0 corresponds to the Object prototype)
+         and so on.
+* **height**: the "height" of the object on which the property is located measured from the 'base'
+      of the prototype chain. I.e. 0 corresponds to the Object prototype.
 
 ## Installation
 
