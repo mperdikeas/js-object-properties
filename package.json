@@ -1,0 +1,35 @@
+{
+  "name": "obj-properties",
+  "version": "0.1.1",
+  "description": "Dynamically evaluated iterator of object properties",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps",
+    "start": "node lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mperdikeas/js-object-properties.git"
+  },
+  "keywords": [
+    "properties"
+  ],
+  "author": "Menelaus Perdikeas",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.7.4",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2016": "^6.0.10",
+    "babel-runtime": "^6.6.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.7.4",
+    "eval": "^0.1.1",
+    "source-map-support": "^0.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/mperdikeas/js-object-properties/issues"
+  },
+  "homepage": "https://github.com/mperdikeas/js-object-properties#readme"
+}
