@@ -37,7 +37,7 @@ based on the following predicates:
   // return the non-enumerable properties of the object at the root
   // of the prototype chain (the Object.prototype)
   properties(o, '!enumerable && (height===0)', x=>x.prop)
-
+```
 
 
 ## Tests
