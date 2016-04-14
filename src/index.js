@@ -18,7 +18,7 @@ function scope(propDescr) {
         depth : propDescr.depth,
         height: propDescr.height,
           own : propDescr.own,
-         enum : propDescr.enumerable,
+   enumerable : propDescr.enumerable,
        symbol : propDescr.symbol
      };
 }
