@@ -33,6 +33,10 @@ based on the following predicates:
   // extra information
   properties(o, '!symbol && (height>0)', x=>x.prop)
 
+  // return the non-enumerable properties of the object at the root
+  // of the prototype chain (the Object.prototype)
+  properties(o, '!enumerable && (height===0)', x=>x.prop)
+
 ## Tests
 
     // not yet implemented
@@ -46,3 +50,4 @@ based on the following predicates:
 * 0.1.0 Initial release
 * 0.1.1 fixes
 * 0.1.2 renamed 'enum' predicate to 'enumerable'
+* 0.1.3 forgot to transpile
