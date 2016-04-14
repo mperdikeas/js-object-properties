@@ -61,3 +61,4 @@ based on the following predicates:
 * 0.1.1 fixes
 * 0.1.2 renamed 'enum' predicate to 'enumerable'
 * 0.1.3 forgot to transpile
+* 0.1.4 more examples in documentation
