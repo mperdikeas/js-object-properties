@@ -1,7 +1,7 @@
 {
   "name": "obj-properties",
-  "version": "0.1.5",
-  "description": "Dynamically evaluated iterator of object properties",
+  "version": "0.1.6",
+  "description": "Dynamically evaluated collection of object properties",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib --source-maps",
