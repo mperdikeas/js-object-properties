@@ -56,7 +56,9 @@ Effectively only the 1st argument is mandatory:
 
 ## Installation
 
-  npm install obj-properties --save
+
+    npm install obj-properties --save
+
 
 ## Usage
 
