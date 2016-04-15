@@ -49,10 +49,10 @@ The function *properties* can be called with 1, 2 or 3 arguments:
 
 ```
 
-Effectively only the 1st argument is mandatory:
+Effectively only the 1<sup>st</sup> argument is mandatory:
 
-* the 2nd argument defaults to the string *'true'*
-* the 3rd argument defaults to: *x=>x*
+* the 2<sup>nd</sup> argument defaults to the string *'true'*
+* the 3<sup>rd</sup> argument defaults to: *x=>x*
 
 ## Installation
 
@@ -107,10 +107,10 @@ Effectively only the 1st argument is mandatory:
 
 ## Release History
 
-* 0.1.0 Initial release
-* 0.1.1 fixes
-* 0.1.2 renamed 'enum' predicate to 'enumerable'
-* 0.1.3 forgot to transpile
-* 0.1.4 more examples in documentation
-* 0.1.5-7 cosmetics and typos
-* 0.1.8 babel-polyfill pattern with two files
+* 0.1.0 &nbsp;&nbsp;&nbsp; Initial release
+* 0.1.1 &nbsp;&nbsp;&nbsp; fixes
+* 0.1.2 &nbsp;&nbsp;&nbsp; renamed 'enum' predicate to 'enumerable'
+* 0.1.3 &nbsp;&nbsp;&nbsp; forgot to transpile
+* 0.1.4 &nbsp;&nbsp;&nbsp; more examples in documentation
+* 0.1.5-7 &nbsp;&nbsp;&nbsp; cosmetics and typos
+* 0.1.8 &nbsp;&nbsp;&nbsp; babel-polyfill pattern with two files
