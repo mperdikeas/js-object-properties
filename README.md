@@ -114,3 +114,4 @@ Effectively only the 1<sup>st</sup> argument is mandatory:
 * 0.1.4 &nbsp;&nbsp;&nbsp; more examples in documentation
 * 0.1.5-7 &nbsp;&nbsp;&nbsp; cosmetics and typos
 * 0.1.8 &nbsp;&nbsp;&nbsp; babel-polyfill pattern with two files
+* 0.1.9 &nbsp;&nbsp;&nbsp; cosmetic
