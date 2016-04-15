@@ -1,6 +1,6 @@
 {
   "name": "obj-properties",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Dynamically evaluated collection of object properties",
   "main": "lib/index.js",
   "scripts": {

@@ -68,6 +68,7 @@ Effectively only the 1<sup>st</sup> argument is mandatory:
   // or:
   //   var properties = require('obj-properties').properties;
 
+  var o = {};
 
   // evaluates to *all* properties along the prototype chain
   properties(o);
@@ -77,7 +78,7 @@ Effectively only the 1<sup>st</sup> argument is mandatory:
 
   // evaluates to an array of all non-symbol properties of the object and
   //  its *immediate* ancestor only
-  properties(o, '(depth<=1) && !symbol'));
+  properties(o, '(depth<=1) && !symbol');
 
   // evaluates to an array of all non-symbol properties of an object o
   // excepting only those that are defined in the Object.prototype
@@ -115,3 +116,4 @@ Effectively only the 1<sup>st</sup> argument is mandatory:
 * 0.1.5-7 &nbsp;&nbsp;&nbsp; cosmetics and typos
 * 0.1.8 &nbsp;&nbsp;&nbsp; babel-polyfill pattern with two files
 * 0.1.9 &nbsp;&nbsp;&nbsp; cosmetic
+* 0.1.10 &nbsp;&nbsp;&nbsp; cosmetic
