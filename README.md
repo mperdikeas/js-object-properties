@@ -15,7 +15,7 @@ based on the following predicates:
       of the prototype chain. I.e. 0 corresponds to the Object prototype.
 
 A single function is exported (*properties*) which returns, when called with an object argument
-an array of objects of the following kind:
+an array of objects corresponding to the argument's properties. Objects are of the following kind:
 
 ```javascript
     {
@@ -40,9 +40,12 @@ Note: all of the above properties are exposed and can be used in the boolean pre
 The function *properties* can be called with 1, 2 or 3 arguments:
 
 ```javascript
-  properties(o); // all properties of the object and its prototype ancestors are returned
-  properties(o, 'own && symbol && (depth == 3)'); // only properties satisfying the arbitrary boolean expression are returned
-  properties(o, 'some boolean expression', x=>x.prop) ; // as above, but only return the properties themselves in the returned array
+  properties(o); // all properties of the object and its ancestors
+                 // along the prototype chain are returned
+  properties(o, 'own && symbol && (depth == 3)'); // only properties satisfying the arbitrary
+                                                  // boolean expression are returned
+  properties(o, 'some boolean expression', x=>x.prop) ; // as above, but only return the properties
+                                                        // themselves in the returned array
 
 ```
 
