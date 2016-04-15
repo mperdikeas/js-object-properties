@@ -76,7 +76,3 @@ function properties(o, script, f) {
 module.exports = {
     properties: properties
 };
-
-
-
-

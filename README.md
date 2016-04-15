@@ -113,4 +113,4 @@ Effectively only the 1st argument is mandatory:
 * 0.1.3 forgot to transpile
 * 0.1.4 more examples in documentation
 * 0.1.5-7 cosmetics and typos
-* 0.1.8-pre babel-polyfill pattern with two files (pre-release)
+* 0.1.8 babel-polyfill pattern with two files
