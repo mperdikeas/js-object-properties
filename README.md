@@ -7,12 +7,44 @@ based on the following predicates:
 
 * **own**: whether the property lives on the object or up the prototype chain
 * **symbol**: whether the property is a symbol or not
-* **enum**: whether the property is enumerable or not
+* **enumerable**: whether the property is enumerable or not
 * **depth**: the "depth" of the object on which the property is located along the prototype chain.
         0 corresponds to the object itself, 1 to its prototype, 2 to the prototype's prototype
          and so on.
 * **height**: the "height" of the object on which the property is located measured from the 'base'
       of the prototype chain. I.e. 0 corresponds to the Object prototype.
+
+A single function is exported (*properties*) which returns, when called with an object argument
+an array of objects of the following kind:
+
+```javascript
+    {
+          prop     :   ... // the property itself
+      , object     :   ... // the object on which the property lives (can be the object itself or some prototype)
+      , depth      :   ..  // the "depth" of the object on which the property is declared (0 for the object itself, 1 for its prototype)
+      , height     :   .. // the "height" of the object on which the property is declared (0 for the Object.prototype, 1 for its child, etc.)
+      , own        :   .. // whether the property is declared directly on the object passed as argument to the properties function (equivalent with testing for depth===0)
+      , enumerable :   .. // whether the property is enumerable
+      , symbol     :   .. // whether the propery is a symbol
+    }
+```
+
+Note: all of the above properties are exposed and can be used in the boolean predicate expressions except for <pre>prop</pre>
+and <pre>object</pre>.
+
+The function <pre>properties</pre> can be called with 1, 2 or 3 arguments:
+
+```javascript
+  properties(o); // all properties of the object and its prototype ancestors are returned
+  properties(o, 'own && symbol && (depth == 3)`); // only properties satisfying the arbitrary boolean expression are returned
+  properties(o, 'some boolean expression', x=>x.prop) ; // as above, but only return the properties themselves in the returned array
+
+```
+
+Effectively only the 1st argument is mandatory:
+
+* the 2nd argument defaults to the expression `true`
+* the 3rd argument defaults to: <pre>x=>x</pre>.
 
 ## Installation
 
@@ -21,8 +53,8 @@ based on the following predicates:
 ## Usage
 
 ```javascript
-  import {properties} from 'obj-properties';
 
+  import {properties} from 'obj-properties';
   // evaluates to *all* properties along the prototype chain
   properties(o);
   
@@ -44,6 +76,10 @@ based on the following predicates:
   // return the non-enumerable properties of the object at the root
   // of the prototype chain (the Object.prototype)
   properties(o, '!enumerable && (height===0)', x=>x.prop);
+
+  // return the non-enumerable properties of the object (or any of
+  // its prototypes, except the Object.prototype)
+  properties(o, '(height>0) && (!enumerable)', x=>x.prop);
 ```
 
 
@@ -63,3 +99,4 @@ based on the following predicates:
 * 0.1.3 forgot to transpile
 * 0.1.4 more examples in documentation
 * 0.1.5-7 cosmetics and typos
+* 0.1.8-pre babel-polyfill pattern with two files (pre-release)
