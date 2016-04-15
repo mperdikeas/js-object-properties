@@ -2,7 +2,7 @@ obj-properties
 =========
 
 A small library allowing a user to specify which properties of an
-object she's interested to retrieve by using arbitrary boolean expressions
+object he's interested to retrieve by using arbitrary boolean expressions
 based on the following predicates:
 
 * **own**: whether the property lives on the object or up the prototype chain
@@ -62,4 +62,4 @@ based on the following predicates:
 * 0.1.2 renamed 'enum' predicate to 'enumerable'
 * 0.1.3 forgot to transpile
 * 0.1.4 more examples in documentation
-* 0.1.5-6 cosmetics and typos
+* 0.1.5-7 cosmetics and typos
