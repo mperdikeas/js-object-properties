@@ -65,6 +65,10 @@ Effectively only the 1st argument is mandatory:
 ```javascript
 
   import {properties} from 'obj-properties';
+  // or:
+  //   var properties = require('obj-properties').properties
+
+
   // evaluates to *all* properties along the prototype chain
   properties(o);
   
