@@ -37,7 +37,7 @@ The function *properties* can be called with 1, 2 or 3 arguments:
 
 ```javascript
   properties(o); // all properties of the object and its prototype ancestors are returned
-  properties(o, 'own && symbol && (depth == 3)`); // only properties satisfying the arbitrary boolean expression are returned
+  properties(o, 'own && symbol && (depth == 3)'); // only properties satisfying the arbitrary boolean expression are returned
   properties(o, 'some boolean expression', x=>x.prop) ; // as above, but only return the properties themselves in the returned array
 
 ```
