@@ -19,20 +19,21 @@ an array of objects of the following kind:
 
 ```javascript
     {
-          prop     :   ... // the property itself
-      , object     :   ... // the object on which the property lives (can be the object itself or some prototype)
-      , depth      :   ..  // the "depth" of the object on which the property is declared (0 for the object itself, 1 for its prototype)
-      , height     :   .. // the "height" of the object on which the property is declared (0 for the Object.prototype, 1 for its child, etc.)
-      , own        :   .. // whether the property is declared directly on the object passed as argument to the properties function (equivalent with testing for depth===0)
-      , enumerable :   .. // whether the property is enumerable
-      , symbol     :   .. // whether the propery is a symbol
+          prop     :   // the property itself
+      , object     :   // the object on which the property lives (can be the object itself or some prototype)
+      , depth      :   // the "depth" of the object on which the property is declared (0 for the object itself, 1 for its prototype)
+      , height     :   // the "height" of the object on which the property is declared (0 for the Object.prototype, 1 for its child, etc.)
+      , own        :   // whether the property is declared directly on the object passed as argument to the properties function (equivalent with testing for depth===0)
+      , enumerable :   // whether the property is enumerable
+      , symbol     :   // whether the propery is a symbol
     }
 ```
 
-Note: all of the above properties are exposed and can be used in the boolean predicate expressions except for <pre>prop</pre>
-and <pre>object</pre>.
+Note: all of the above properties are exposed and can be used in the boolean predicate expressions except for *prop* and
+*object*.
 
-The function <pre>properties</pre> can be called with 1, 2 or 3 arguments:
+
+The function *properties* can be called with 1, 2 or 3 arguments:
 
 ```javascript
   properties(o); // all properties of the object and its prototype ancestors are returned
@@ -43,8 +44,8 @@ The function <pre>properties</pre> can be called with 1, 2 or 3 arguments:
 
 Effectively only the 1st argument is mandatory:
 
-* the 2nd argument defaults to the expression `true`
-* the 3rd argument defaults to: <pre>x=>x</pre>.
+* the 2nd argument defaults to the string *'true'*
+* the 3rd argument defaults to: *x=>x*
 
 ## Installation
 
