@@ -19,13 +19,17 @@ an array of objects of the following kind:
 
 ```javascript
     {
-          prop     :   // the property itself
-      , object     :   // the object on which the property lives (can be the object itself or some prototype)
-      , depth      :   // the "depth" of the object on which the property is declared (0 for the object itself, 1 for its prototype)
-      , height     :   // the "height" of the object on which the property is declared (0 for the Object.prototype, 1 for its child, etc.)
-      , own        :   // whether the property is declared directly on the object passed as argument to the properties function (equivalent with testing for depth===0)
-      , enumerable :   // whether the property is enumerable
-      , symbol     :   // whether the propery is a symbol
+          prop     :   // The property itself
+      , object     :   // The object on which the property lives
+                       // (can be the object itself or some prototype)
+      , depth      :   // The "depth" of the object on which the property is declared
+                       // (0 for the object itself, 1 for its prototype)
+      , height     :   // The "height" of the object on which the property is declared
+                       // (0 for the Object.prototype, 1 for its child, etc.)
+      , own        :   // Whether the property is declared directly on the object passed as argument
+                       // (this is equivalent to testing for depth===0)
+      , enumerable :   // Whether the property is enumerable
+      , symbol     :   // Whether the propery is a symbol
     }
 ```
 
