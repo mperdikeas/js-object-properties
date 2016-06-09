@@ -76,11 +76,6 @@ function propertiesCount(o, script) {
     return [...propertiesGenerator(o, script)].length;
 }
 
-function foo() {
-
-}
-
-
 module.exports = {
     properties: properties,
     propertiesCount: propertiesCount
