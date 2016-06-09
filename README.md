@@ -95,6 +95,12 @@ Effectively only the 1<sup>st</sup> argument is mandatory:
   // return the non-enumerable properties of the object (or any of
   // its prototypes, except the Object.prototype)
   properties(o, '(height>0) && (!enumerable)', x=>x.prop);
+
+  // helper function that only returns count:
+  import {propertiesCount} from 'obj-properties';
+  propertiesCount({});          // 12
+  propertiesCount({}, 'own'); //  0
+  
 ```
 
 
@@ -117,3 +123,4 @@ Effectively only the 1<sup>st</sup> argument is mandatory:
 * 0.1.8 &nbsp;&nbsp;&nbsp; babel-polyfill pattern with two files
 * 0.1.9 &nbsp;&nbsp;&nbsp; cosmetic
 * 0.1.10 &nbsp;&nbsp;&nbsp; cosmetic
+* 0.1.11 &nbsp;&nbsp;&nbsp; added propertiesCount
