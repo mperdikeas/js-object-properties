@@ -106,7 +106,7 @@ Effectively only the 1<sup>st</sup> argument is mandatory:
 
 ## Tests
 
-    // not yet implemented
+    npm test
 
 ## Contributing
 
@@ -125,3 +125,4 @@ Effectively only the 1<sup>st</sup> argument is mandatory:
 * 0.1.10 &nbsp;&nbsp;&nbsp; cosmetic
 * 0.1.11 &nbsp;&nbsp;&nbsp; added propertiesCount
 * 0.1.12 &nbsp;&nbsp;&nbsp; dropped dead code
+* 0.1.13 &nbsp;&nbsp;&nbsp; added testing

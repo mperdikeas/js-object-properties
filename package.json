@@ -1,11 +1,12 @@
 {
   "name": "obj-properties",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Dynamically evaluated collection of object properties",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib --source-maps",
-    "start": "node lib/index.js"
+    "start": "node lib/index.js",
+    "test": "mocha --compilers js:babel-core/register"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,8 @@
     "babel-core": "^6.7.4",
     "babel-polyfill": "^6.7.4",
     "babel-preset-es2016": "^6.0.10",
-    "babel-runtime": "^6.6.1"
+    "babel-runtime": "^6.6.1",
+    "mocha": "^2.5.3"
   },
   "dependencies": {
     "babel-polyfill": "^6.7.4",
