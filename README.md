@@ -128,3 +128,4 @@ Effectively only the 1<sup>st</sup> argument is mandatory:
 * 0.1.13 &nbsp;&nbsp;&nbsp; added testing
 * 0.1.14 &nbsp;&nbsp;&nbsp; only conditionally requiring the Babel polyfill
 * 0.1.15 &nbsp;&nbsp;&nbsp; fixed problem with running tests
+* 0.1.16 &nbsp;&nbsp;&nbsp; fixed the "Reflect.ownKeys called on non-object" bug

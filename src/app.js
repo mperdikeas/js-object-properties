@@ -42,20 +42,22 @@ function *allPropertyDescriptors(o) {
     let depth = 0;
     const MAX_DEPTH = calculateMaxDepth(o);
     for (let p = o; p != null ; p = Object.getPrototypeOf(p), depth++ ) {
-        const ownKeys = Reflect.ownKeys(p);
-        for (let i = 0 ; i < ownKeys.length ; i++) {
-            const propDescr = Object.getOwnPropertyDescriptor(p, ownKeys[i]);
-            const own = (p===o);
-            const enumerable = propDescr.enumerable;
-            const symbol = (typeof (ownKeys[i]) === (typeof Symbol()));
-            yield {
-                prop: ownKeys[i]
-                , object: p
-                , depth
-                , height: MAX_DEPTH - depth -1
-                , own
-                , enumerable
-                , symbol};
+        if (typeof p === typeof {}) {
+            const ownKeys = Reflect.ownKeys(p);
+            for (let i = 0 ; i < ownKeys.length ; i++) {
+                const propDescr = Object.getOwnPropertyDescriptor(p, ownKeys[i]);
+                const own = (p===o);
+                const enumerable = propDescr.enumerable;
+                const symbol = (typeof (ownKeys[i]) === (typeof Symbol()));
+                yield {
+                    prop: ownKeys[i]
+                    , object: p
+                    , depth
+                    , height: MAX_DEPTH - depth -1
+                    , own
+                    , enumerable
+                    , symbol};
+            }
         }
     }
 }

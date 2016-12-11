@@ -27,6 +27,10 @@ describe('obj-properties', function () {
            , function () {
                assert.equal(true, (()=>{return propertiesCount({}, '!own')>0;})());
            });
+        it('can handle a string without throwing Reflect.ownKeys called on non-object'
+           , function () {
+               properties('foo');
+           });        
     });
 });
          
