@@ -14,8 +14,8 @@ based on the following predicates:
 * **height**: the "height" of the object on which the property is located measured from the 'base'
       of the prototype chain. I.e. 0 corresponds to the Object prototype.
 
-A single function is exported (*properties*) which returns, when called with an object argument
-an array of objects corresponding to the argument's properties. Objects are of the following kind:
+Function *properties* is exported which returns, when called with an object argument,
+an array of objects corresponding to that argument's properties. Objects are of the following kind:
 
 ```javascript
     {
@@ -45,8 +45,8 @@ The function *properties* can be called with 1, 2 or 3 arguments:
                  // along the prototype chain are returned
   properties(o, 'own && symbol && (depth == 3)'); // only properties satisfying the arbitrary
                                                   // boolean expression are returned
-  properties(o, 'some boolean expression', x=>x.prop) ; // as above, but only return the properties
-                                                        // themselves in the returned array
+  properties(o, 'some boolean expression', x=>x.prop) ; // as above, but only return the property
+                                                        // names in the returned array
 
 ```
 
@@ -133,3 +133,4 @@ Effectively only the 1<sup>st</sup> argument is mandatory:
 * 0.1.17 &nbsp;&nbsp;&nbsp; returning property values as well
 * 0.2.0  &nbsp;&nbsp;&nbsp; bumped version
 * 0.2.1  &nbsp;&nbsp;&nbsp; test for arrays
+* 0.2.2  &nbsp;&nbsp;&nbsp; text cosmetic
