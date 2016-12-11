@@ -1,3 +1,4 @@
+require('source-map-support').install();
 import 'babel-polyfill';
 import {properties, propertiesCount} from '../lib/app.js';
 const assert     = require('assert');
