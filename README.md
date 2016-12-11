@@ -34,8 +34,8 @@ an array of objects corresponding to the argument's properties. Objects are of t
     }
 ```
 
-Note: all of the above properties are exposed and can be used in the boolean predicate expressions except for *prop* and
-*object*.
+Note: all of the above properties are exposed and can be used in the boolean predicate expressions except for *prop*,
+*value* and *object*.
 
 
 The function *properties* can be called with 1, 2 or 3 arguments:
