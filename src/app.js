@@ -51,6 +51,7 @@ function *allPropertyDescriptors(o) {
                 const symbol = (typeof (ownKeys[i]) === (typeof Symbol()));
                 yield {
                     prop: ownKeys[i]
+                    , value: o[ownKeys[i]]
                     , object: p
                     , depth
                     , height: MAX_DEPTH - depth -1

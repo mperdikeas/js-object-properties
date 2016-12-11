@@ -19,17 +19,18 @@ an array of objects corresponding to the argument's properties. Objects are of t
 
 ```javascript
     {
-          prop     :   // The property itself
-      , object     :   // The object on which the property lives
+          prop     :   // the name of the property
+      , value      :   // the value of that property
+      , object     :   // the object on which the property lives
                        // (can be the object itself or some prototype)
-      , depth      :   // The "depth" of the object on which the property is declared
+      , depth      :   // the "depth" of the object on which the property is declared
                        // (0 for the object itself, 1 for its prototype)
-      , height     :   // The "height" of the object on which the property is declared
+      , height     :   // the "height" of the object on which the property is declared
                        // (0 for the Object.prototype, 1 for its child, etc.)
-      , own        :   // Whether the property is declared directly on the object passed as argument
+      , own        :   // whether the property is declared directly on the object passed as argument
                        // (this is equivalent to testing for depth===0)
-      , enumerable :   // Whether the property is enumerable
-      , symbol     :   // Whether the propery is a symbol
+      , enumerable :   // whether the property is enumerable
+      , symbol     :   // whether the propery is a symbol
     }
 ```
 
@@ -129,3 +130,4 @@ Effectively only the 1<sup>st</sup> argument is mandatory:
 * 0.1.14 &nbsp;&nbsp;&nbsp; only conditionally requiring the Babel polyfill
 * 0.1.15 &nbsp;&nbsp;&nbsp; fixed problem with running tests
 * 0.1.16 &nbsp;&nbsp;&nbsp; fixed the "Reflect.ownKeys called on non-object" bug
+* 0.1.17 &nbsp;&nbsp;&nbsp; returning property values as well

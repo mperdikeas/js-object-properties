@@ -19,8 +19,8 @@ describe('obj-properties', function () {
            , function () {
                const test = {a: 1, b: 2};
                const props = properties(test, 'own');
-               const expected = [{prop: 'a', object: test, depth: 0, height: 1, own: true, enumerable: true, symbol: false}
-                               , {prop: 'b', object: test, depth: 0, height: 1, own: true, enumerable: true, symbol: false}];
+               const expected = [{prop: 'a', value: 1, object: test, depth: 0, height: 1, own: true, enumerable: true, symbol: false}
+                               , {prop: 'b', value: 2, object: test, depth: 0, height: 1, own: true, enumerable: true, symbol: false}];
                assert.deepEqual(props, expected);
            });
         it('should correctly travel up the object chain'
