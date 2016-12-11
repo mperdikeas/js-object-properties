@@ -131,3 +131,5 @@ Effectively only the 1<sup>st</sup> argument is mandatory:
 * 0.1.15 &nbsp;&nbsp;&nbsp; fixed problem with running tests
 * 0.1.16 &nbsp;&nbsp;&nbsp; fixed the "Reflect.ownKeys called on non-object" bug
 * 0.1.17 &nbsp;&nbsp;&nbsp; returning property values as well
+* 0.2.0  &nbsp;&nbsp;&nbsp; bumped version
+* 0.2.1  &nbsp;&nbsp;&nbsp; test for arrays

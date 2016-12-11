@@ -1,6 +1,6 @@
 {
   "name": "obj-properties",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Dynamically evaluated collection of object properties",
   "main": "lib/index.js",
   "scripts": {
@@ -23,6 +23,7 @@
     "babel-polyfill": "^6.7.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-runtime": "^6.6.1",
+    "lodash": "^4.17.2",
     "mocha": "^2.5.3"
   },
   "dependencies": {
